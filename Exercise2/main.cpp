@@ -64,5 +64,5 @@ int main()
 	double err3_QR = (x3_QR - x_esatta).norm() / x_esatta.norm();
 	cout << "L'errore relativo associato al terzo sistema risolto mediante fattorizzazione QR è " << err3_QR << endl;
 	
-    return 0;
+    return 1;
 }
