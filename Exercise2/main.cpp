@@ -29,11 +29,11 @@ int main()
 	
 	Vector2d x1_PALU = soluzione_PALU(A1, b1);
 	double err1_PALU = (x1_PALU - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al primo sistema risolto mediante fattorizzazione PALU è " << err1_PALU << endl;
+	cout << "Errore relativo associato al primo sistema risolto mediante fattorizzazione PALU: " << err1_PALU << endl;
 	
 	Vector2d x1_QR = soluzione_QR(A1, b1);
 	double err1_QR = (x1_QR - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al primo sistema risolto mediante fattorizzazione QR è " << err1_QR << endl;
+	cout << "Errore relativo associato al primo sistema risolto mediante fattorizzazione QR: " << err1_QR << endl;
 	
 	
 	
@@ -44,11 +44,11 @@ int main()
 	
 	Vector2d x2_PALU = soluzione_PALU(A2, b2);
 	double err2_PALU = (x2_PALU - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al secondo sistema risolto mediante fattorizzazione PALU è " << err2_PALU << endl;
+	cout << "Errore relativo associato al secondo sistema risolto mediante fattorizzazione PALU: " << err2_PALU << endl;
 	
 	Vector2d x2_QR = soluzione_QR(A2, b2);
 	double err2_QR = (x2_QR - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al secondo sistema risolto mediante fattorizzazione QR è " << err2_QR << endl;
+	cout << "Errore relativo associato al secondo sistema risolto mediante fattorizzazione QR:  " << err2_QR << endl;
 	
 	
 	Matrix2d A3;
@@ -58,11 +58,11 @@ int main()
 	
 	Vector2d x3_PALU = soluzione_PALU(A3, b3);
 	double err3_PALU = (x3_PALU - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al terzo sistema risolto mediante fattorizzazione PALU è " << err3_PALU << endl;
+	cout << "Errore relativo associato al terzo sistema risolto mediante fattorizzazione PALU: " << err3_PALU << endl;
 	
 	Vector2d x3_QR = soluzione_QR(A3, b3);
 	double err3_QR = (x3_QR - x_esatta).norm() / x_esatta.norm();
-	cout << "L'errore relativo associato al terzo sistema risolto mediante fattorizzazione QR è " << err3_QR << endl;
+	cout << "Errore relativo associato al terzo sistema risolto mediante fattorizzazione QR: " << err3_QR << endl;
 	
     return 0;
 }
